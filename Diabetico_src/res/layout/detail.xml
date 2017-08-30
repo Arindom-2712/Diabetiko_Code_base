@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/full_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fromAlpha="0.0"
+        android:scaleType="fitXY"
+        android:toAlpha=".8" />
+
+    <LinearLayout
+        android:id="@+id/infodetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="100dp"
+        android:scrollbars="none" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Enter Your Location"
+            android:textColor="@color/head_search"
+            android:textSize="18sp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/mylocation"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Location(s)"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapWords"
+            android:padding="3dp"
+            android:textSize="15sp" 
+            />
+        
+        <ImageView
+        android:id="@+id/myloc"
+        android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/go" />
+ 		
+
+        <Button
+            android:id="@+id/use_current_Location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/head_search"
+            android:text="Use Your Current Location"
+            
+            android:textColor="@color/white" />
+    </LinearLayout>
+	
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:background="#55000000"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

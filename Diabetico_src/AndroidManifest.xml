@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diabeticsCare.diabetico"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.diabeticsCare.diabetico.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".detailImage"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+         <activity
+            android:name=".Alternative_Search"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".DieticianProfile"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".AlternativeProfile"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".SearchDietician"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".CompleteProfile"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".AddAppointmentLab"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".docsignup"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".login"	
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".diagnosticsignup"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".searchResults"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".docProfile"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".diagnotic_profile"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".AddAppointment"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".booking_profile"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".history"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <activity
+            android:name=".Bookings"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+          <activity
+            android:name=".AddAppointmentAlternative"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+          <activity
+            android:name=".AddAppointmentDietician"
+            android:parentActivityName="com.diabeticsCare.diabetico.MainActivity" >
+        </activity>
+        <receiver 
+            android:name=".Reminder" >
+        </receiver>
+    </application>
+
+     <uses-permission android:name="android.permission.CALL_PHONE" />
+     <uses-permission android:name="android.permission.VIBRATE" />
+      <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

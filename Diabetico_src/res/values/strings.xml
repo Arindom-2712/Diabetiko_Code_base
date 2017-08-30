@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diabetico</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_name">What are you looking for </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_join">Search</string>
+    <string name="Search">Search</string>
+    <string name="Specialize">We Specialize in : </string>
+    <string name="title">""</string>
+    <string name="cheese_hunt_hint">""</string>
+
+    <string-array name="Manging_For">
+        <item>Self</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Spouse</item>
+    </string-array>
+    
+    <string-array name="Sex">
+        <item>Sex</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Others</item>
+    </string-array>
+    
+    <string-array name="Weight">
+        
+        <item>KGs</item>
+        <item>LBs</item>
+    </string-array>
+
+    <string-array name="Height">
+        <item>Feet</item>
+        <item>Cms</item>
+    </string-array>
+</resources>

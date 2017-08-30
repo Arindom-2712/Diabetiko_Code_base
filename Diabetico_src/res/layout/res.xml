@@ -1,0 +1,30 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip" 
+    android:scrollbars="none">
+
+    <ImageView
+        android:id="@+id/sorry"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/sorry" />
+    
+
+    
+   <ListView
+    android:id="@android:id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+	android:dividerHeight="2dip"
+	android:background="@color/white"
+	android:cacheColorHint="@android:color/transparent"
+	android:drawSelectorOnTop="true" 
+    />
+
+</RelativeLayout>

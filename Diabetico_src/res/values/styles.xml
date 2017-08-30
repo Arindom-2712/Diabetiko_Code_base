@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="BlackText">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/theme</item>
+        <item name="android:displayOptions">showHome|useLogo|showTitle</item> 
+        <item name="android:text">@color/white</item>
+        
+        <item name="android:title">""</item>
+        <item name="android:titleTextStyle">@style/Theme.MyAppTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/Theme.MyAppTheme.ActionBar.SubTitleTextStyle</item>
+    </style>
+
+    <style name="Theme.MyAppTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        
+        
+        <!-- <item name="android:listSelector">@drawable/upp</item> -->
+    </style>
+
+    <!-- Change Overflow Menu ListView Text Size and Text Size -->
+    <style name="PopupMenuTextView" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">25dp</item>
+        <!-- <item name="android:drawableRight">@drawable/upp</item> -->
+    </style>
+
+    <!-- Change Overflow Menu Background -->
+    <style name="PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+    <style name="MyTheme.ActionBar.TabView" parent="android:style/Widget.Holo.ActionBar.TabView">
+    <!-- This is a GREEN background -->
+    <item name="android:background">@color/theme</item>
+</style>
+	
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:homeAsUpIndicator">@drawable/upasarrow</item>
+        <item name="android:actionBarSize">52dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>       
+		<item name="android:actionBarTabStyle">@style/MyTheme.ActionBar.TabView</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:actionBarWidgetTheme">@style/PopupMenuTextView</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

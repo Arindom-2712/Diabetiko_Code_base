@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context=".docsignup" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/head_search"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:scrollbars="none" >
+
+        <com.diabeticsCare.diabetico.customImageShape
+            android:id="@+id/full_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/diabetico" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Your Diabetic Specialist"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+	<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearLayout1" >
+        
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:scrollbars="none" >
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="40dp"
+            android:text="SIGN UP"
+            android:textColor="@color/white" />
+        
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+             android:layout_marginTop="40dp"
+            android:background="@color/blue"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="SIGN IN"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

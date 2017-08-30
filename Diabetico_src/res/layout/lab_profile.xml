@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp" >
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/head_search"
+            android:text="CALL" />
+    </LinearLayout>
+
+    <com.diabeticsCare.diabetico.ScrollViewX
+        android:id="@+id/docProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buttons" >
+
+       <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/docImage"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.diabeticsCare.diabetico.customImageShape
+                    android:id="@+id/fullimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                   	android:gravity = "center"
+                    android:orientation="vertical"
+                     />
+                <TextView
+                android:id="@+id/Doctor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp" />
+                <TextView
+                android:id="@+id/Degree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginBottom="5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/docImage"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:drawableLeft="@drawable/exp"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="20 Yrs Exp" />
+
+            <TextView
+                android:id="@+id/labLocation"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/experience"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/locs23"
+                android:drawablePadding="17dp"
+                android:gravity="left|center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/labLocation"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/special"
+                android:clickable="true"
+                android:drawableLeft="@drawable/avl"
+                android:drawablePadding="17dp"
+                android:textColor="@color/blue"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:text="8AM - 10AM" />
+
+            <TextView
+                android:id="@+id/special"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fees"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/textlines"
+                android:gravity="left|center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/fees"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/phone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/practices"
+                android:drawablePadding="17dp"
+                android:textColor="@color/blue"
+                android:gravity="left|center"
+                android:text="DOCTORS:" />
+            
+            <ListView
+                android:id="@+id/listViewTest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fees"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="@style/BlackText" />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/listViewTest1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/blood3"
+                android:drawablePadding="15dp"
+                android:gravity="left|center"
+                android:text="TESTS"
+                android:textColor="@color/blue" />
+
+     
+            <ListView
+                android:id="@+id/listViewTest"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/test"
+                android:layout_marginLeft="60dp"
+                android:paddingBottom="10dp"
+                android:text="@style/BlackText" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/phone"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/phone"
+                android:src="@drawable/quest" />
+
+        </RelativeLayout>
+    </com.diabeticsCare.diabetico.ScrollViewX>
+
+</RelativeLayout>

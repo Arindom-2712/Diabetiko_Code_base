@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context=".docsignup" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/head_search"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/enter_name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/docform"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout1"
+            android:background="@color/blue"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:scrollbars="vertical" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="email"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="phonenumber"
+                android:inputType="phone"
+                android:padding="3dp"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/regNum"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="Reg Num"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/regFrom"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="Reg From"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/qualification"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="qualification"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/specialization"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="specialization"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/clinic"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="clinic"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+            
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="location"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+            
+            <EditText
+                android:id="@+id/fees"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="fees"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/hospital"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="hospital"
+                android:inputType="textCapWords"
+                android:padding="3dp"
+                android:textSize="15sp" />
+            
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="We will verify the details before confirming your registration with us"
+                android:textColor="@color/red"
+                android:textSize="12sp" 
+                 android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/head_search"
+                android:text="Submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

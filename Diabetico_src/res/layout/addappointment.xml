@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp" >
+
+ <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/head_search"
+        android:text="ADD" />
+    </LinearLayout>
+<LinearLayout
+            android:id="@+id/space"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+</LinearLayout>
+
+<com.diabeticsCare.diabetico.customImageShape
+    android:id="@+id/imageView1"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/space"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/blank_pp" />
+
+<com.diabeticsCare.diabetico.customImageShape
+    android:id="@+id/ImageView01"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageView1"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_toLeftOf="@+id/doc_Location"
+    android:src="@drawable/location" />
+
+<TextView
+    android:id="@+id/doc_Location"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignBottom="@+id/imageView1"
+    android:layout_marginLeft="16dp"
+    android:layout_toRightOf="@+id/imageView1"
+    android:gravity="top|left"
+    android:text="name"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/docName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/ImageView01"
+    android:gravity="center|left"
+    android:layout_alignLeft="@+id/doc_Location"
+    android:text="loc"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <requestFocus />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/doc_Location"
+        android:src="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/doc_Location"
+        android:src="@drawable/clock" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/docName"
+        android:hint="DD-MM-YY"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/docName"
+        android:clickable="true"
+        android:ems="10" >
+         <requestFocus></requestFocus>
+         </EditText>
+     <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/docName"
+        android:layout_marginTop="50dp"
+        android:hint="HH-MM"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_below="@+id/editText1"
+        android:ems="10">
+        <requestFocus></requestFocus> 
+	</EditText>
+
+</RelativeLayout>

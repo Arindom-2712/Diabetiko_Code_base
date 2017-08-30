@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/test_Name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:gravity="left|top"
+        android:paddingBottom="6dip"
+        android:paddingLeft="0dip"
+        android:paddingTop="6dip"
+        android:text="sdasd sadas"
+        android:textSize="12dip" />
+
+    <TextView
+        android:id="@+id/Test_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/rs"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:paddingBottom="6dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="10dip"
+        android:paddingTop="6dip"
+        android:text="dfsd"
+        android:textColor="@color/Grey"
+        android:textSize="12dip" />
+
+</LinearLayout>

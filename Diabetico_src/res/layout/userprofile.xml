@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    <com.diabeticsCare.diabetico.customImageShape
+        android:id="@+id/full_image_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/blank_pp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Are You Signed In"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours" />
+
+        <EditText
+                android:id="@+id/hrs"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="MM"
+                android:inputType="phone"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes" />
+
+       <EditText
+                android:id="@+id/mns"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="MM"
+                android:inputType="phone"
+                android:padding="3dp"
+                android:textSize="15sp" />
+       <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AM/PM" />
+
+       <EditText
+                android:id="@+id/ampm"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="AM/PM"
+                
+                android:padding="3dp"
+                android:textSize="15sp" />
+       
+        <Button
+            android:id="@+id/Reminder"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:text="SetReminder" />
+       
+          
+</LinearLayout>

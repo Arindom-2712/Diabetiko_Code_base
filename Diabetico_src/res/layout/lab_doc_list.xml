@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/test_Name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_weight=".5"
+        android:paddingLeft="0dip"
+        android:paddingBottom="6dip"
+        android:textSize="12dip"
+        android:paddingTop="6dip"
+        android:gravity="left|top"
+        android:text="sdasd sadas" 
+        
+        />
+
+    <TextView
+        android:id="@+id/Test_price"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_weight=".5"
+        android:paddingLeft="6dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="6dip"
+        android:paddingTop="6dip"
+        android:textSize="12dip"
+        android:gravity="center"
+        android:text="dfsd" 
+        android:textColor="@color/Grey"/>
+    <TextView
+        android:id="@+id/Test_Timings"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:paddingLeft="6dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="6dip"
+        android:drawableLeft="@drawable/rs"
+        android:drawablePadding="8dp"
+        android:paddingTop="6dip"
+        android:textSize="12dip"
+        android:gravity="left|center"
+        android:text="" 
+        android:textColor="@color/blue"/>
+ 
+
+</LinearLayout>

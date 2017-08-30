@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/item1"
+        android:enabled="true"
+        android:title="Login"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/item3"
+        android:title="Doc Sign Up">
+    </item>
+    <item
+        android:id="@+id/item4"
+        android:title="Register Diagnostic ">
+    </item>
+    <item
+        android:id="@+id/item5"
+        android:title="Share ">
+    </item>
+    <item
+        android:id="@+id/item6"
+        android:title="Rate Us ">
+    </item>
+	<!-- <item android:id="@+id/action_search"
+    android:icon="@drawable/search"
+    android:title="Search"
+    android:showAsAction="ifRoom"
+    android:actionViewClass="android.widget.SearchView"
+   /> -->
+</menu>
